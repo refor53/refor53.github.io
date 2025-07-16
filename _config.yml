@@ -40,7 +40,7 @@ social:
   links:
     # The first element serves as the copyright owner's link
     # - https://twitter.com/username # change to your Twitter homepage
-    - https://github.com/username # change to your GitHub homepage
+    - https://github.com/refor53 # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
@@ -125,15 +125,15 @@ comments:
     category: Announcements
     category_id: DIC_kwDOPM4de84Cs-8a
     mapping: pathname # optional, default to 'pathname'
-    strict: # optional, default to '0'
+    strict: 0 # optional, default to '0'
     input_position: top # optional, default to 'bottom'
     lang: ko # optional, default to the value of `site.lang`
-    reactions_enabled: # optional, default to the value of `1`
+    reactions_enabled: 1 # optional, default to the value of `1`
 
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
 assets:
   self_host:
-    enabled: # boolean, keep empty means false
+    enabled: false # boolean, keep empty means false
     # specify the Jekyll environment, empty means both
     # only works if `assets.self_host.enabled` is 'true'
     env: # [development | production]
@@ -153,6 +153,14 @@ paginate: 10
 # The base URL of your site
 baseurl: ""
 
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+  - jekyll-archives
+  
 # ------------ The following options are not recommended to be modified ------------------
 
 kramdown:
